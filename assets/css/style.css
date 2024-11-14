@@ -1,0 +1,158 @@
+
+:root{
+    --main-color: #1A73F8;
+    --main-orange: orange;
+    --main-white: white;
+    --main-like-white: #efefef;
+    --main-like-gray: #cccc;
+}
+/*******CONTAINNER******************/
+.container{
+    height: 100vh;
+}
+/******************NAV******************/
+nav{
+    min-width: 620px;
+    height: 100vh;
+    overflow: auto;
+}
+nav h2 {
+    margin-left: 10px;
+}
+nav .station-cover img {
+    height: 400px;
+}
+.about-station{
+    padding: 10px;
+}
+.about-station strong{
+    color: var(--main-color);
+}
+.about-station p{
+    font-size: 1.3rem;
+    border-bottom: 0.1px solid var(--main-like-gray);
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/*************SEARCHBAR*******************/
+
+.search-bar {
+    z-index: 999;
+    left: 55px;
+    top: 10px;
+    background-color: var(--main-like-white);
+    padding: 15px 30px;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 2px 8px 12px rgb( 0 0 0/20% );
+    height: 35px;
+}
+.search-bar input{
+   height: 35px;
+   font-size: 1.5rem;
+   border: none;
+   background-color: var(--main-like-white);
+   outline: none;
+
+}
+.search-bar i{
+  color: var(--main-like-gray);
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
+/********POPUP CARTES*********/
+.station-popup{
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 350px !important;
+   /* white-space: nowrap;*/
+}
+.bt-about-station {
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    color: var(--main-like-white);
+    font-weight: bold;
+    height: 30px;
+    width:100%;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.leaflet-popup-content-wrapper{
+    width: 400px;
+}
+.leaflet-popup-content{
+    margin: 0;
+
+}
+/********DETAILS STATION******************/
+.station-reviews{
+    font-size: 1.4rem;
+    border-bottom: .01px solid var(--main-like-gray);
+    padding-bottom: 15px;
+}
+.station-reviews .reviews-resume{
+    color: var(--main-color);
+}
+.station-action-item i {
+    font-size: 1.4rem;
+    color: var(--main-white);
+    background-color: var(--main-color);
+    padding: 15px;
+    display: block;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.station-actions, 
+.station-description{
+    border-bottom: .01px solid var(--main-like-gray);
+}
+
+i.fa-star{
+    color: var(--main-orange);
+    
+}
+
+.station-description{
+    font-size: 1.4rem;
+}
+.station-service-item li{
+    padding: 10px 0;
+}
+.station-service-item:hover{
+    font-weight: bold;
+    background-color: var(--main-like-white);
+    cursor: pointer;
+}
+.station-service-item img{
+   height: 40px;
+   width: 40px;
+}
+.station-service-item{
+    padding: 10px 0;
+}
+
+/***************SEARCH BAR SUGGESTION *******************/
+.search-bar-suggestion {
+    background-color: var(--main-like-white);
+    top: 67px;
+    left: 0;
+    width: 100%;
+    border-radius:10px ;box-shadow: 2px 8px 12px rgb( 0 0 0/20% );
+
+}
+.search-bar-suggestion .suggestion-item {
+    padding: 5px 15px;
+    line-height: 1.9;
+    border-bottom: 0.1px solid var(--main-like-gray);
+    cursor: pointer;
+}
+.search-bar-suggestion .suggestion-item:hover {
+    background-color: var(--main-like-gray);
+}
